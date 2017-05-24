@@ -2,8 +2,35 @@
 <html>
   <head>
     <title>Get back to work | Cmprsd</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
   </head>
   <body>
-    Thoughts become reality. You are on a mission. Get back to work.
+    <section>
+      <h1>Don't distract yourself</h1>
+      Thoughts become reality. You are on a mission.
+      <p><span>Get back to work.</span></p>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var i, o = 0, f = 100, y = 0
+          , s = document.querySelector('section')
+          , p = document.querySelector('p span');
+
+        s.style.position = 'relative';
+        i = setInterval(function(){
+          o += 0.01; f += 0.5; y -= 0.03;
+          s.style.opacity = o.toFixed(2);
+          s.style.fontSize = f + '%';
+          s.style.marginTop = (10 + y) + '%';
+          if(o > 1) ci();
+        }, 10);
+
+        function ci(){
+          clearInterval(i);
+          p.style.borderBottom = '1px dashed #333';
+        }
+
+      });
+    </script>
   </body>
 </html>

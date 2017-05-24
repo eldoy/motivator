@@ -1,0 +1,25 @@
+*, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section {
+  margin: 20% auto;
+  width: 750px;
+  text-align: center;
+  opacity: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 150%;
+  padding-bottom: 0.809em;
+}
+
+p {
+  margin-top: 0.809em;
+}
