@@ -7,7 +7,7 @@
   <body>
     <section>
       <h1>Don't distract yourself</h1>
-      Thoughts become reality. You are on a mission.
+      <div>Thoughts become reality. You are on a mission.</div>
       <p><span>Get back to work.</span></p>
     </section>
     <script>
@@ -18,16 +18,16 @@
 
         s.style.position = 'relative';
         i = setInterval(function(){
-          o += 0.01; f += 0.5; y -= 0.03;
+          o += 0.01; f += 0.5; y -= 0.015;
           s.style.opacity = o.toFixed(2);
           s.style.fontSize = f + '%';
-          s.style.marginTop = (10 + y) + '%';
-          if(o > 1) ci();
+          s.style.marginTop = (10 - y) + '%';
+          if(o >= 0.9) ci();
         }, 10);
 
         function ci(){
           clearInterval(i);
-          p.style.borderBottom = '1px dashed #333';
+          p.className = 'border';
         }
 
       });
