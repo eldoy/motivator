@@ -34,7 +34,7 @@ p {
 }
 
 p span {
-  color: red;
+  color: #f34;
   border-bottom: 1px solid transparent;
   transition: border-bottom 2s ease-out;
 }
